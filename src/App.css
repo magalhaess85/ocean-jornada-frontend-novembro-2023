@@ -1,19 +1,45 @@
 .card{
-  border: 0.1rem solid black;
-  border-radius: 1rem;
-  padding: 2rem;
+  border: 0.1rem solid rgb(249, 248, 248);
+  border-radius: 2rem;
+  padding: 0.5rem;
   text-align: center;
-  background: #f8f8f8;
-  transition: all 0.1s ease-in-out;
+  background: #484242;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
 }
 
 .card:hover{
-  box-shadow: 0.25rem 0.25rem black;
+  box-shadow: 0.25rem 0.25rem rgb(250, 248, 248);
   translate: -0.25rem -0.25rem;
 }
 
 .card > h2{
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Tahoma, sans-serif;
+  position: relative;
+}
+
+.card > h2::before{
+  content: " ";
+  width: 0.1rem;
+  height: 0.1rem;
+  background-color: #000000;
+  position: absolute;
+  bottom: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.card > h2:hover::before{
+  width: 11rem;
+}
+
+.card > h3{
+  font-family: Verdana, Tahoma, sans-serif;
+  border: 0.1rem solid rgb(255, 255, 255);
+  margin: 1rem 15rem 1rem 15rem;
+  border-radius: 2rem;
+  padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+  text-align: center;
+  background: #f8f8f8;
 }
 
 .card > img{
