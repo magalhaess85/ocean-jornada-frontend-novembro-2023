@@ -1,3 +1,10 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
 .card {
   border: 0.1rem solid black;
   border-radius: 1rem;
@@ -17,7 +24,6 @@
 .card > h2 {
   font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
   border-left: 0.5rem solid #97d7d7;
-
 }
 
 .card > img {
@@ -31,7 +37,7 @@
   box-shadow: 0.25rem 0.25rem #FEA6CA;
 }
 
-.tags{
+.tags {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -39,7 +45,7 @@
   margin-bottom: 1rem;
 }
 
-.tag{
+.tag {
   background: black;
   color: white;
   padding: 0.5rem 1rem;

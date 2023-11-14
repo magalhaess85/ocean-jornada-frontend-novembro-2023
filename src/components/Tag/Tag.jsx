@@ -1,4 +1,4 @@
-export default function Tag(props){
+export default function Tag(props) {
     const text = props.text;
-    return <div className = "tag">{text} </div>
-}
+    return <div className="tag">{text}</div>
+  }
