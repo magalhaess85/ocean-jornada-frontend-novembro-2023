@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
-import './App.css'
-import Card from './components/Card/Card';
+import Card from '../Card/Card';
 
-function App() {
+export default function Home() {
   const [items, setItems] = useState([])
 
   async function carregarDadosApi() {
@@ -42,5 +41,3 @@ function App() {
     </>
   )
 }
-
-export default App;
